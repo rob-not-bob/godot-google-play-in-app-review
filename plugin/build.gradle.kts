@@ -5,11 +5,8 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
-// TODO: Update value to your plugin's name.
-val pluginName = "GodotAndroidPluginTemplate"
-
-// TODO: Update value to match your plugin's package name.
-val pluginPackageName = "org.godotengine.plugin.android.template"
+val pluginName = "GooglePlayInAppReview"
+val pluginPackageName = "dev.binarysunrise.GodotGooglePlayInAppReview"
 
 android {
     namespace = pluginPackageName
@@ -39,6 +36,8 @@ android {
 
 dependencies {
     implementation("org.godotengine:godot:4.2.0.stable")
+    implementation("com.google.android.play:review:2.0.1")
+    implementation("com.google.android.play:review-ktx:2.0.1")
 }
 
 // BUILD TASKS DEFINITION
